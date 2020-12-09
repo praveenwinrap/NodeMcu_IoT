@@ -6,7 +6,7 @@ Serial.println("AT");
 delay(1000);
 Serial.println("AT+CWMODE=3");
 delay(1500);
-Serial.println("AT+CWJAP=\"Torvalds\",\"linux@training\"");
+Serial.println("AT+CWJAP=\"SSID\",\"PASSWORD\"");
 delay(7000);
 
 }
@@ -17,7 +17,7 @@ void loop() {
   delay(2000);
   Serial.println("AT+CIPSEND=49");
   delay(100);
-  Serial.println("GET /update?api_key=ER8YOHD135RU1J7O&field1=8");
+  Serial.println("GET /update?api_key=YOUR_TOKEN&field1=8");
   delay(100);
   Serial.println("AT+CIPCLOSE");
   delay(15000);

@@ -7,7 +7,7 @@ void setup()
 {
 Serial.begin(9600);
 
-WiFi.begin("endurance","Winrap321!");
+WiFi.begin("SSID","PASSWORD");
 delay(7000);
 Serial.println("connected to");
 Serial.println(WiFi.localIP());
@@ -23,7 +23,7 @@ void loop()
   Serial.print("Humidity=");
   Serial.println(humi);
 
-d1 ="GET /update?api_key=ITZTYZIAKC6GZ1T4&field1=";
+d1 ="GET /update?api_key=YOUR_SSID&field1=";
 d2="&field2="
 
 request=d1+temp+d2+humi;
